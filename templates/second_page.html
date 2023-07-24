@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Hello CRM</h1>
-    <p>This is a Home Page</p>
+    <h1>Second Page</h1>
+    <p>This is a second page</p>
+    <ul>
+    {% for lead in leads %}
+    <li>{{ lead }}</li>
+    {% endfor %}
+    </ul>
+
 </body>
 </html>
